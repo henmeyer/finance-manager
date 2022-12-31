@@ -1,0 +1,15 @@
+.links {
+  text-decoration: none;
+  font-weight: bold;
+  padding: 20px;
+  color: white;
+}
+
+.links:visited {
+  color: white;
+}
+
+.links:hover {
+  background-color: white;
+  color: rgb(12, 26, 156);
+}

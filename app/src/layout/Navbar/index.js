@@ -1,17 +1,12 @@
-import { NavLink } from "react-router-dom";
+import NavbarLink from "../../components/NavbarLink";
+import "./style.css";
 
 const Navbar = () => {
   return (
-    <>
-      <ul>
-        <li>
-          <NavLink to={"/"}>Dashboard</NavLink>
-        </li>
-        <li>
-          <NavLink to={"/money-flow"}>Money Flow</NavLink>
-        </li>
-      </ul>
-    </>
+    <div className="link-menu">
+      <NavbarLink to={"/app"} linkName="Dashboard" />
+      <NavbarLink to={"/app/money-flow"} linkName="Money Flow" />
+    </div>
   );
 };
 

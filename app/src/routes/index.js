@@ -3,14 +3,15 @@ import Navbar from "../layout/Navbar";
 import Dashboard from "../pages/Dashboard";
 import MoneyFlow from "../pages/MoneyFlow";
 
-
 const Routes = () => {
   return (
     <BrowserRouter>
       <Navbar />
       <RouterRoutes>
-        <Route exact path="/" element={<Dashboard />} />
-        <Route exact path="/money-flow" element={<MoneyFlow />} />
+        <Route path="/">
+          <Route exact path="/app/" element={<Dashboard />} />
+          <Route exact path="/app/money-flow" element={<MoneyFlow />} />
+        </Route>
       </RouterRoutes>
     </BrowserRouter>
   );
